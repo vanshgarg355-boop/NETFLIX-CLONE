@@ -1,0 +1,325 @@
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  body{
+    background:
+    radial-gradient(circle at top, rgba(255,0,0,0.25), transparent 35%),
+    radial-gradient(circle at bottom, rgba(120,0,255,0.15), transparent 30%),
+    #000;
+
+    color:white;
+    min-height:100vh;
+}
+   
+     .navbar{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 60px;
+      position:absolute;
+      width:100%; 
+    } 
+    .top-icon{
+      display: flex;
+      flex-direction: row;
+    }
+    .Language{
+      background:rgb(26, 25, 25);
+      color:white;
+      border:solid black;
+      padding:8px 16px;
+      cursor:pointer;
+      font-size:medium;
+      border-radius:7px;
+    }
+    .signin{
+      background:red;
+      color:white;
+      border:none;
+      padding:8px 16px;
+      cursor:pointer;
+      border-radius:7px;
+      font-size: medium;
+    }
+    
+    input{
+      
+      background-color: #3b3a3a;
+    }
+    .hero{
+      height:100vh;
+      background:linear-gradient(to top, rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(./img/bg\ img.jpg);
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+      
+    }
+    .hero h1{
+      position: relative;
+      z-index: 10;
+      font-size:48px;
+      margin-top:20px;
+    }
+    .hero h2{
+      font-size:24px;
+      font-weight:normal;
+      margin-bottom:20px;
+    }
+    .hero p{
+      font-size:18px;
+      margin-bottom:20px;
+    }
+    .email-box{
+      display:flex;
+      justify-content:center;
+      flex-wrap:wrap;
+      padding: 8px;
+    }
+    .email-box input{
+      padding:15px;
+      width:300px;
+      border:none;
+      outline:none;
+      font-size:16px;
+    }
+    .email-box button{
+      padding:15px 25px;
+      background:red;
+      border:none;
+      color:white;
+      font-size:16px;
+    }
+
+/* -------- TOP 10 -------- */
+/* -------- TOP 10 -------- */
+
+.TN{
+    font-size: 30px;
+    padding: 0px 100px;
+    margin-bottom: 20px;
+}
+
+/* IMAGE SCROLL */
+
+.Trending{
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding: 20px 100px;
+}
+
+.Trending::-webkit-scrollbar{
+    height: 8px;
+}
+
+.Trending::-webkit-scrollbar-track{
+    background: #111;
+    border-radius: 10px;
+}
+
+.Trending::-webkit-scrollbar-thumb{
+    background: red;
+    border-radius: 10px;
+}
+
+.Trending img{
+    height: 260px;
+    width: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.Trending img:hover{
+    transform: scale(1.08);
+}
+/*-------Cards-------*/
+/* SECTION */
+.MR{
+    font-size: 30px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+
+.reasons{
+    max-width:1400px;
+    margin:60px auto;
+    padding:0 20px;
+}
+.reasons h2{
+    font-size:2rem;
+    margin-bottom:30px;
+}
+
+/* GRID */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:8px;
+}
+
+/* CARD */
+.card{
+    position:relative;
+    padding:30px;
+    border-radius:20px;
+    min-height: 230px;
+    background:
+        linear-gradient(135deg,
+        #1a2a4f,
+        #2b193f 60%,
+        #12010a);
+}
+
+/* TEXT */
+.card h3{
+    font-size:1.4rem;
+    margin-bottom:10px;
+}
+.card p{
+    color:#cfcfcf;
+    line-height:1.5;
+}
+.cards :hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.07);
+}
+
+/* ICON */
+.icon{
+    position:absolute;
+    right:25px;
+    font-size:3rem;
+    
+}
+.img{
+  display: flex;
+  justify-content: space-evenly;
+}
+.card img{
+  height:35px;
+}
+
+/* -------- FAQ -------- */
+.HF{
+    font-size: 30px;
+    margin-left: 5px;
+    padding: auto;
+}
+.faq{
+    padding: 10px 100px 10px 100px;
+    width: 100%;
+    margin:auto;
+}
+.faq :hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.01);
+}
+details{
+    background:#2d2d2d;
+    margin-bottom:10px;
+}
+summary{
+    padding:22px;
+    font-size:1.5rem;
+    cursor:pointer;
+    position:relative;
+    list-style:none;
+}
+summary::after{
+    content:"+";
+    position:absolute;
+    right:22px;
+    font-size:2rem;
+}
+details[open] summary::after{
+    content:"x";
+}
+.answer{
+    border-top:2px solid #000000;
+    padding:22px;
+    font-size:1.1rem;
+    line-height:1.6;
+}
+.ready {
+    padding: 4px;
+}
+    footer{
+      padding:40px 60px;
+      color:#999;
+      font-size:14px;
+    }
+   .footer {
+    padding: 40px 10%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 40px;
+}
+
+.footer-grid a {
+    color: #bbb;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.footer-grid a:hover {
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width:768px){
+    header{
+        padding:15px;
+    }
+   
+    .cards{
+        grid-template-columns:repeat(1,1fr);
+    }
+    .card{
+        min-height: 180px;
+    }
+    .Tranding{
+        min-height: 360px;
+    }
+    .faq{
+        padding: 10px;
+        width: 100%;
+    }
+}
